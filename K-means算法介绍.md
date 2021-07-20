@@ -6,7 +6,7 @@
 
 ## 1.Kmeans
 
-​		                  <img src="E:\ke\Pictures\K-means.png" style="zoom:90%;" />
+​		                  <img src="Picture/K-means.png" style="zoom:90%;" />
 
 ### 1.1 简介
 
@@ -32,7 +32,7 @@ d）重复(b)(c)步骤，直至收敛（达到最大迭代次数或聚类中心�
 
 ​		K-means++是一种优化初始聚类中心选取的策略。初始随机选取的聚类中心对聚类效果和运行时间都有很大的影响，聚类中心选取不好，不仅会导致较长的训练时间，还可能得到较差的局部最优解。如下图所示，分类结果①是效果较好的，但若是初始聚类中心选取的不好，也可能得到分类结果②和③。K-means++的基本思想是：聚类中心之间的距离一般来说相对较大，所以尽量选取相隔远的点作为聚类中心。这样选择有利于减少迭代次数，同时得到较好的局部最优解。
 
-<img src="E:\ke\Pictures\分类结果.png" alt="image-20210719105500621" style="zoom: 80%;" />
+<img src="Picture/分类结果.png" alt="image-20210719105500621" style="zoom: 80%;" />
 
 K-means++的步骤区别就在于初始聚类中心的选取：
 		a）从数据集中随机选取一个聚类中心
@@ -49,13 +49,11 @@ K-means++的步骤区别就在于初始聚类中心的选取：
 	例：点集合为a,b,c,d。a点为聚类中心，b,c,d点到a点的距离分别是1,2,4。那么可以得到如下数组
 ```
 
-<img src="C:\Users\bingchengke\AppData\Roaming\Typora\typora-user-images\image-20210719111404202.png" alt="image-20210719111404202" style="zoom: 80%;" />
+<img src="Picture/转盘算法.png" alt="image-20210719111404202" style="zoom: 80%;" />
 
 ```
 那么随机函数结果为1，则选择b点为新的聚类中心；随机函数结果为3，则选择c点作为新的聚类中心，因为3处于c点的区域；同理随机函数结果值落在4~7之间，则选择d点为新的聚类中心
 ```
-
-<img src="Picture/image-20210720154146869.png" alt="image-20210720154146869" style="zoom: 50%;" />
 
 #### 1.3.2 Mini batch K-means
 
@@ -75,4 +73,4 @@ d）重复(b)(c)步骤，直至收敛（达到最大迭代次数或聚类中心�
 
 ​		肘部法，即根据不同K选值下，将K-means模型的损失值绘制成图，选取拐角处的K值最优。很多时候肘部法也不起作用，因为不存在明显的拐点。
 
-<img src="E:\ke\Pictures\肘部法.png" alt="image-20210719114440093" style="zoom: 67%;" />
+<img src="Picture/肘部法.png" alt="image-20210719114440093" style="zoom: 67%;" />
