@@ -4,7 +4,7 @@
 
 ## 1.Kmeans	       
 
-<img src="E:\Picture\K-means算法.jpeg" style="zoom: 50%;" />
+<img src="https://pic-1304701097.file.myqcloud.com/web/K-means算法.jpeg" style="zoom: 50%;" />
 
 ### 1.1 K-means算法简介
 
